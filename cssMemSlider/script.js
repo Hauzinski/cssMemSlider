@@ -1,5 +1,7 @@
 const controls = document.getElementById("controls");
 const dots = document.querySelectorAll(".controls__dot");
+const sld = document.querySelector(".slider");
+const sldImages = document.querySelector(".slider__images");
 
 let slideNow = 0;
 
@@ -10,8 +12,9 @@ function dotCheck(event) {
     }
 
     event.target.classList.add("controls__dot_selected");
-    slideNow = +event.target.id[4] - 1;    
+    slideNow = +event.target.id[4] - 1;
   }
+  sldImages.style.transform = `translateX(-${sld.clientWidth * slideNow}px)`;
 }
 
 controls.addEventListener("mousedown", dotCheck);
