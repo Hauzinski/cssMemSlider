@@ -26,8 +26,7 @@ function dotCheck(event) {
   for (let value of text) {
     value.hidden = true;
   }
-  document.getElementById(`text-${slideNow + 1}`).hidden = false;
-  // document.getElementById(`text-${slideNow + 1}`).style.color = "red";
+  document.getElementById(`text-${slideNow + 1}`).hidden = false;  
   sldImages.style.transform = `translateX(-${sld.clientWidth * slideNow}px)`;
 }
 

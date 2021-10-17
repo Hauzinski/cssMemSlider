@@ -85,7 +85,6 @@ body {
   color: var(--white);
 }
 
-
 .controls {
   grid-area: ctrl;
   justify-self: end;
@@ -118,4 +117,42 @@ body {
 .controls__dot_selected,
 .controls__dot-container:hover .controls__dot_selected {
   background-color: transparent;
+}
+
+@media (max-width: 1450px) {
+  .main {    
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(1fr 6fr) 1fr 1fr;
+    grid-gap: 2em 0;
+    grid-template-areas:
+      "sld"
+      "ctrl"
+      "text";
+  }
+
+  .controls {
+    justify-self: center;
+  }
+
+  .controls__dot-container {    
+    align-items: center;    
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  .main {
+    width: 90%;
+    max-height: 80%;
+    grid-gap: 1em 0;
+  }
+
+  .controls__dot-container {    
+    width: 3em;
+    height: 3em;  
+  }
+
+  .controls__dot {    
+    width: 1.7em;
+    height: 1.7em;       
+  }
 }
