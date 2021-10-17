@@ -89,7 +89,28 @@ body {
   justify-self: end;  
 }
 
+.controls__dot-container {
+  display: inline-flex;
+  justify-content: center;
+  width: 2em;
+  height: 2em;  
+
+  cursor: pointer;  
+}
+
 .controls__dot {
+  display: block;
+  width: 1.2em;
+  height: 1.2em;  
+  
+  background-color: var(--blue);
+  border-radius: 50%;
+  border: 0.2em solid var(--blue);
+
+  
+}
+
+/* .controls__dot {
   display: inline-block;
   width: 1.2em;
   height: 1.2em;
@@ -100,14 +121,14 @@ body {
   border: 0.2em solid var(--blue);
 
   cursor: pointer;
-}
+} */
 
-.controls__dot:hover {
+.controls__dot-container:hover .controls__dot {
   background-color: var(--light-grey);
   border-color: var(--light-grey);
 }
 
 .controls__dot_selected,
-.controls__dot_selected:hover {
+.controls__dot-container:hover .controls__dot_selected {
   background-color: transparent;
 }
