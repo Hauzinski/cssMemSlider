@@ -10,7 +10,19 @@
   </head>
   <body>
     <main class="main">
-      <div class="slider">
+      <input type="radio" name="radio" id="radio1" class="controls__dot controls__dot_selected" checked>
+      <input type="radio" name="radio" id="radio2" class="controls__dot">
+      <input type="radio" name="radio" id="radio3" class="controls__dot">
+      <input type="radio" name="radio" id="radio4" class="controls__dot">
+      <input type="radio" name="radio" id="radio5" class="controls__dot">
+      <div id="controls" class="controls">
+        <label class="controls__dot-container button1" for="radio1"></label>
+        <label class="controls__dot-container button2" for="radio2"></label>
+        <label class="controls__dot-container button3" for="radio3"></label>
+        <label class="controls__dot-container button4" for="radio4"></label>
+        <label class="controls__dot-container button5" for="radio5"></label>
+      </div>
+      <div class="slider">      
         <div class="slider__images">
           <img src="img/slider/picture-1.jpg" alt="picture" />
           <img src="img/slider/picture-2.jpg" alt="picture" />
@@ -19,19 +31,7 @@
           <img src="img/slider/picture-5.jpg" alt="picture" />
         </div>
       </div>
-      <p id="text-1" class="text">Internet explorer has stopped working.</p>
-      <p id="text-2" class="text" hidden>How to properly greet someone during the coronavirus outbreak.</p>
-      <p id="text-3" class="text" hidden>I changed all may passwords to "incorrect".</p>
-      <p id="text-4" class="text" hidden>One does not simply.</p>
-      <p id="text-5" class="text" hidden>Front-end is the path to the dark side.</p>
-      <div id="controls" class="controls">
-        <div class="controls__dot-container"><span id="dot-1" class="controls__dot controls__dot_selected"></span></div>
-        <div class="controls__dot-container"><span id="dot-2" class="controls__dot"></span></div>
-        <div class="controls__dot-container"><span id="dot-3" class="controls__dot"></span></div>
-        <div class="controls__dot-container"><span id="dot-4" class="controls__dot"></span></div>
-        <div class="controls__dot-container"><span id="dot-5" class="controls__dot"></span></div>
-      </div>
-    </main>
-    <script src="script.js"></script>
+      <p id="text-1" class="text">Internet explorer has stopped working.</p>      
+    </main>    
   </body>
 </html>
