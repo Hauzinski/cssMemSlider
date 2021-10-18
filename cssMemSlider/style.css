@@ -57,8 +57,7 @@ body {
 }
 
 .slider__images {
-  display: flex;
-  /* flex-direction: row; */
+  display: flex;  
   height: 100%;
   width: 100%;
 
@@ -97,8 +96,7 @@ body {
 }
 
 .text-wrapper {
-  grid-area: text;
-  /* min-height: 5em; */
+  grid-area: text;  
 
   order: 2;
   overflow: hidden; 
@@ -132,7 +130,7 @@ body {
 #radio3:checked ~ .text-wrapper .text3,
 #radio4:checked ~ .text-wrapper .text4,
 #radio5:checked ~ .text-wrapper .text5 {
-  animation: go-text 0.3s ease-out;
+  animation: goText 0.3s ease-out;
   order: 1;
   width: 100%;
 }
@@ -188,6 +186,15 @@ body {
 #radio4:checked ~ .controls .button4:hover::after,
 #radio5:checked ~ .controls .button5:hover::after {
   border: 0.2rem solid var(--light-grey);
+}
+
+@keyframes goText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 @media (max-width: 1450px) {
